@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: url("/photo/bg-man-sitting.jpg");
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.header::after{
+    position:absolute;
+    content: '';
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(3, 3, 88, 0.253);
+    top: -70%;
+    left: -50%;
+    transform: rotate(25deg);
+}
+
+.header .container {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+
+}
+
+.header .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+
+}
+
+.header .container nav .logo {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.header .container nav ul li{
+ 
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.header .container nav ul li a{
+    text-decoration: none;
+    color: rgb(190, 185, 185);
+    font-size: 17px;
+    translate: 0.4s;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.header .container nav ul li a:hover{
+    color: white;
+}
+
+.header .container nav .btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(78, 78, 211);
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: 700;
+    translate: 0.4s;
+}
+
+.header .container nav  .btn:hover{
+    color: rgb(78, 78, 211); 
+    background-color: white;
+}
+
+.header .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);   
+}
+
+.header .content h1{
+    color: white;
+    font-size: 50px;
+}
+
+.header .content p{
+    color: white;
+    line-height: 2;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    
+}
+
+.header .content a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(78, 78, 211);
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: 700;
+    translate: 0.4s;
+    display: inline-block;
+}
+
+.header .content a:hover{
+    color: rgb(78, 78, 211); 
+    background-color: white;
+}
+
